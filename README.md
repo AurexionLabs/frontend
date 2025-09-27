@@ -13,7 +13,7 @@ It’s built with **plain HTML, CSS, and JavaScript**, no frameworks, for simpli
 
 ## Demo
 
-The live version of the site is available at: [https://aurexionlabs.com](https://aurexionlabs.com)
+The live version of the site is available at: [https://www.aurexionlabs.com](https://www.aurexionlabs.com)
 
 ## Structure
 
