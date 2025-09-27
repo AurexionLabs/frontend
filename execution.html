@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unified Execution Engine for Quantower - Aurexion Labs</title>
+  <meta name="description" content="All Aurexion Labs strategies run on a battle-tested execution layer, ensuring every trade is executed with precision and consistency.">
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="icon" type="image/png" sizes="128x128" href="/favicon.png">
+</head>
+<body>
+<div id="header-placeholder"></div>
+
+<div class="page-content">
+  <div class="content-block">
+    <h1>Our Unified Execution Layer</h1>
+    <p>
+      All Aurexion Labs strategies are built on a battle-tested, live execution layer that serves as the foundation for every strategy we offer. This robust platform ensures that every trade, no matter how complex, is executed with precision and consistency.
+    </p>
+    <p>
+      The platform is designed with advanced asynchronous handling, allowing it to manage complex scenarios such as partial fills, multi-leg executions, and dynamic order adjustments seamlessly. Traders can configure multiple legs within a single strategy, each with its own take-profit targets and trailing logic, while the system automatically manages hundreds of partial fills to ensure that allocations across all legs remain accurate.
+    </p>
+    <p>
+      Every execution is meticulously tracked. Partial fills are aggregated, divided correctly among strategy legs, and monitored in real time to maintain strict adherence to the user’s configuration. This ensures that no trade is left unmanaged, and every leg behaves exactly as intended.
+    </p>
+    <p>
+      The available features within a strategy are determined by its type. Mean reversion strategies, for example, typically operate with a single take-profit level—set at the mean of the chosen indicator such as MA or<a href="products/avwap_strategy.html" class="read-more">AVWAP</a>—but still fully support trailing logic, stop-loss rules, and other risk management settings. Multi-leg strategies with multiple take-profit levels are better suited for momentum and trend-following approaches, whether intraday or on a longer time horizon.
+    </p>
+    <h3 class="image-title">Mean Reversion Example</h3>
+    <div class="image-row">
+        <img src="assets/trail-params.png" alt="Example of trailing stop-loss">
+        <img src="assets/trail1.png" alt="Example of trailing stop-loss">
+    </div>
+
+    <p>
+      New entry models can be easily integrated into the platform, allowing the system to evolve as new techniques are developed. In the future, users will also be able to connect third-party signals directly to the platform, expanding flexibility and enabling a hybrid of automated and discretionary trading. The system is also highly effective as a semi-discretionary aid: traders can manually enter positions at their discretion, while the execution engine automatically manages risk, trailing stops, and take-profits according to predefined settings.
+    </p>
+
+    <h3 class="image-title">Logging</h3>
+    <img src="assets/trail-log.png" alt="Example of detailed logging">
+    <p>
+      The platform provides comprehensive, detailed logs, giving traders complete transparency into the internal workings of the execution engine. Users can review the lifecycle of each trade, analyze performance at the level of individual fills, and verify that strategies operate exactly as intended.
+    </p>
+
+    <h3 class="image-title">Daily P/L Limits</h3>
+    <img src="assets/daily-limits.png" alt="Example of detailed logging">
+    <img src="assets/daily-limits2.png" alt="Example of detailed logging">
+    <p>
+      Set daily per-strategy-instance P/L limits in dollar or points. When a limit is reached (even during a trade): 
+    </p>
+    <ul>
+      <li>All orders and positions will be cancelled and closed</li>
+      <li>The strategy will not be able to take any new trades until the next day</li>
+      <li>An email will be sent to your email address</li>
+    </ul>
+
+    <h3 class="image-title">Daily trading periods</h3>
+    <img src="assets/periods.png" alt="Example of detailed logging">
+    <p>
+      Use up to 3 different trading periods. Configurable every day if you need to. For example if you want to avoid a certain news event happening on that day.
+      When the end of a period happens, all orders and positions will be cancelled and closed automatically.
+
+      If you don't set any periods, the strategy will run perpetually (good for crypto for example, or if trading on higher timeframes)
+    </p>
+    
+    <h3 class="image-title">Stable Core</h3>
+    <p>
+      By centralizing all strategies on this unified execution layer, Aurexion Labs aims for consistency, reliability, and the flexibility to implement advanced trading techniques that would be impractical on standard execution systems. Whether managing multiple legs, handling asynchronous partial fills, integrating new entry models, or connecting external signals, our platform provides the infrastructure for professional, automated, and semi-discretionary trading at the highest level. Learn more on our<a href="about.html" class="read-more">About Us</a> page.
+    </p>
+  </div>
+</div>
+
+<div id="footer-container"></div>
+
+<script src="../js/main.js"></script>
+
+</body>
+</html>

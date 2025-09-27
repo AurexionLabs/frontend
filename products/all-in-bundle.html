@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All-in Bundle – Aurexion Labs Trading Strategies & Indicator Pack for Quantower</title>
+  <meta name="description" content="All-in Bundle from Aurexion Labs: Includes all current and future trading strategies plus the full indicator pack. One-stop professional toolkit.">
+  <link rel="stylesheet" href="../style/main.css">
+  <link rel="icon" type="image/png" sizes="128x128" href="/favicon.png">
+</head>
+<body>
+
+<div id="header-placeholder"></div>
+
+<div class="page-content">
+  <div class="content-block">
+    <h1>All-in Bundle</h1>
+    <img src="../assets/bundle.png" alt="Aurexion Labs All-in Bundle product screenshot">
+
+    <p>
+      The <strong>All-in Bundle</strong> includes <strong>all current and future base strategies</strong> along with the complete <a href="products/indicator-pack.html" class="read-more">Indicator Pack</a>,  
+      Ideal for traders seeking a comprehensive toolkit without purchasing individual components separately.
+    </p>
+
+    <h2>Bundle Contents</h2>
+    <ul>
+      <li>All Aurexion Labs base Strategies (current + future)</li>
+      <li>AVWAP Mean Reversion Strategy</li>
+      <li>Upcoming base strategies (Coming Soon)</li>
+      <li>Full Indicator Pack: AVWAP, BBWP, KER, HMA, GCF</li>
+    </ul>
+
+    <p>Price: <strong>$499</strong></p>
+    <button class="btn" onclick="openCheckout('All-in Bundle', 499, 'all_in_bundle')">Buy Bundle</button>
+  </div>
+</div>
+
+<!-- Checkout Modal -->
+  <div id="checkoutModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="checkoutCloseBtn">&times;</span>
+      <h2 class="modal-title" id="modalProductName">Product Name</h2>
+      <div class="modal-price" id="modalProductPrice">$0</div>
+
+      <!-- Email input with custom styling -->
+      <div class="checkout-email-container">
+        <label for="checkoutEmail">Email:</label>
+        <input type="email" id="checkoutEmail" placeholder="you@example.com" required />
+        <button id="checkoutProceedBtn">Proceed to Payment</button>
+      </div>
+
+      <!-- Trading / risk disclaimer -->
+      <div id="tradingDisclaimer" style="color:#EEE; font-size:0.85em; margin-bottom:1rem; text-align:left;">
+        <h3>Disclaimer</h3>
+        Trading involves substantial risk. Past performance is not indicative of future results. 
+        By using these strategies and indicators, you acknowledge it is your responsibility 
+        to monitor any running strategies and understand their behavior. Bugs may exist; 
+        familiarize yourself with each tool before risking capital. Use these tools cautiously and at your own risk.
+        <a href="/disclaimer.html" class="read-more" target="_blank">Full trading disclaimer</a>
+      </div>
+
+      <!-- Disclaimer (neutral color) -->
+      <div id="checkoutDisclaimer" style="display:none; color:#ccc; font-size:0.9em; margin-top:8px;">
+        Please do not close the browser/tab while payment is processing. After the payment is completed and confirmed 
+        (wait for a green checkmark), you will get an email with the software and the license key shortly. If you cannot
+         find the email, please check your spam folder. If any other issues arise, <a href="about.html#contact-section" target="_blank" class="read-more">Contact Us</a>
+
+      </div>
+
+      <!-- Checkout iframe container (empty initially) -->
+      <div id="checkoutContainer"></div>
+    </div>
+  </div>
+
+  <!-- Early Access Modal -->
+  <div class="modal" id="earlyAccessModal">
+    <div class="modal-content">
+      <span class="close-modal" id="earlyAccessClose">&times;</span>
+
+      <h2 class="modal-title">Early Access Information</h2>
+      <p>
+        You are joining at a special early stage! Prices are currently low, and strategies/indicators will continue
+        to improve and become more stable. In the future, premium strategies may have a fixed cap on licenses to
+        preserve capacity edge. Your feedback and suggestions are welcome.
+      </p>
+      <p>
+        Take advantage of this opportunity to get in at the best prices and help shape future releases!
+      </p>
+    </div>
+  </div>
+
+<div id="footer-container"></div>
+
+<script src="../js/main.js"></script>
+<script src="../js/early_access.js"></script>
+<script src="../js/checkout.js"></script>
+
+</body>
+</html>

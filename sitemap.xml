@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.aurexionlabs.com/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Top-level pages -->
+  <url>
+    <loc>https://www.aurexionlabs.com/quantower</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.aurexionlabs.com/execution</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.aurexionlabs.com/about</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.aurexionlabs.com/philosophy</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.aurexionlabs.com/faq</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Products -->
+  <url>
+    <loc>https://www.aurexionlabs.com/products/avwap_strategy.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.aurexionlabs.com/products/indicator-pack.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.aurexionlabs.com/products/all-in-bundle.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /.netlify/
+Allow: /
+
+Sitemap: https://www.aurexionlabs.com/sitemap.xml

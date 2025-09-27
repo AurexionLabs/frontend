@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indicator Pack for Quantower – Aurexion Labs</title>
+  <meta name="description" content="Indicator Pack from Aurexion Labs: Includes AVWAP, BBWP, KER, HMA, GCF indicators for professional trading strategies.">
+  <link rel="stylesheet" href="../style/main.css">
+  <link rel="icon" type="image/png" sizes="128x128" href="/favicon.png">
+</head>
+<body>
+
+<div id="header-placeholder"></div>
+
+<div class="page-content">
+  <div class="content-block">
+    <h1>Indicator Pack</h1>
+    <p>
+      The Indicator Pack includes all indicators used in Aurexion Labs strategies, plus a few extra to enhance your trading analysis and execution.
+      Quantower already has a lot of built-in indicators, but these are custom made by us and does not yet exist in Quantower (as of 2025-09-24). There is a variation
+      of Anchored VWAP, but it is more like an overlay that cannot be used in strategies, and you have to manually change the anchor point. Our
+      version is automatically anchored to 3 different points during the day and will update without intervention, and it can be used in strategies.
+    </p>
+
+    <h2>Included Indicators:</h2>
+    <ul>
+      <li><strong>AVWAP (Auto-anchored VWAP):</strong> Auto-anchored VWAP with customizable anchor points, flat logic, lookback, and band settings.</li>
+      <img src="../assets/avwap-pack.png" alt="Screenshot of Aurexion Labs AVWAP">
+      <li><strong>BBWP (Bollinger Band Width Percentage):</strong> Bollinger Band Width Percentage for trend and volatility analysis.</li>
+      <img src="../assets/bbwp-pack.png" alt="Screenshot of Aurexion Labs BBWP">
+      <li><strong>KER (Kaufman Efficiency Ratio):</strong> Identifies trending versus choppy markets.</li>
+      <img src="../assets/ker-pack.png" alt="Screenshot of Aurexion Labs KER">
+      <li><strong>GCF (Goerzel Chop Filter):</strong> Detects sideways/choppy markets to filter entries.</li>
+      <img src="../assets/gcf-pack.png" alt="Screenshot of Aurexion Labs GCF">
+    </ul>
+
+    <p>Price: <strong>$49</strong></p>
+    <button class="btn" onclick="openCheckout('Indicator Pack', 49, 'indicator_pack')">Buy Now</button>
+  </div>
+</div>
+
+<!-- Checkout Modal -->
+  <div id="checkoutModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="checkoutCloseBtn">&times;</span>
+      <h2 class="modal-title" id="modalProductName">Product Name</h2>
+      <div class="modal-price" id="modalProductPrice">$0</div>
+
+      <!-- Email input with custom styling -->
+      <div class="checkout-email-container">
+        <label for="checkoutEmail">Email:</label>
+        <input type="email" id="checkoutEmail" placeholder="you@example.com" required />
+        <button id="checkoutProceedBtn">Proceed to Payment</button>
+      </div>
+
+      <!-- Trading / risk disclaimer -->
+      <div id="tradingDisclaimer" style="color:#EEE; font-size:0.85em; margin-bottom:1rem; text-align:left;">
+        <h3>Disclaimer</h3>
+        Trading involves substantial risk. Past performance is not indicative of future results. 
+        By using these strategies and indicators, you acknowledge it is your responsibility 
+        to monitor any running strategies and understand their behavior. Bugs may exist; 
+        familiarize yourself with each tool before risking capital. Use these tools cautiously and at your own risk.
+        <a href="/disclaimer.html" class="read-more" target="_blank">Full trading disclaimer</a>
+      </div>
+
+      <!-- Disclaimer (neutral color) -->
+      <div id="checkoutDisclaimer" style="display:none; color:#ccc; font-size:0.9em; margin-top:8px;">
+        Please do not close the browser/tab while payment is processing. After the payment is completed and confirmed 
+        (wait for a green checkmark), you will get an email with the software and the license key shortly. If you cannot
+         find the email, please check your spam folder. If any other issues arise, <a href="about.html#contact-section" target="_blank" class="read-more">Contact Us</a>
+      </div>
+
+      <!-- Checkout iframe container (empty initially) -->
+      <div id="checkoutContainer"></div>
+    </div>
+  </div>
+
+  <!-- Early Access Modal -->
+  <div class="modal" id="earlyAccessModal">
+    <div class="modal-content">
+      <span class="close-modal" id="earlyAccessClose">&times;</span>
+
+      <h2 class="modal-title">Early Access Information</h2>
+      <p>
+        You are joining at a special early stage! Prices are currently low, and strategies/indicators will continue
+        to improve and become more stable. In the future, premium strategies may have a fixed cap on licenses to
+        preserve capacity edge. Your feedback and suggestions are welcome.
+      </p>
+      <p>
+        Take advantage of this opportunity to get in at the best prices and help shape future releases!
+      </p>
+    </div>
+  </div>
+
+<div id="footer-container"></div>
+
+<script src="../js/main.js"></script>
+<script src="../js/early_access.js"></script>
+<script src="../js/checkout.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AVWAP Mean Reversion Strategy for Quantower – Aurexion Labs</title>
+  <meta name="description" content="AVWAP Mean Reversion strategy from Aurexion Labs: Professional auto-anchored VWAP strategy with built-in risk management for professional traders.">
+  <link rel="stylesheet" href="../style/main.css">
+  <link rel="icon" type="image/png" sizes="128x128" href="/favicon.png">
+</head>
+<body>
+
+<div id="header-placeholder"></div>
+
+<div class="page-content">
+  <div class="content-block">
+    <h1>AVWAP Mean Reversion</h1>
+    <img src="../assets/avwap5.png" alt="Screenshot of AVWAP Mean Reversion Strategy">
+
+    <p>
+      The AVWAP Mean Reversion strategy is a professional auto-anchored VWAP trading system. 
+      Entry is based on customizable standard deviation bands, allowing you to select which band triggers trades.
+    </p>
+
+    <h2>Special Features</h2>
+    <ul>
+      <li>Customizable standard deviation bands for precise entries.</li>
+      <li>Flat-band logic: trades only taken when the main AVWAP band is flat.</li>
+      <li>Built-in risk management for professional trading.</li>
+      <li>Highly configurable for different market conditions and timeframes.</li>
+      <li>Auto-anchored to New York, London, and Asia open sessions (customizable in future updates).</li>
+    </ul>
+
+    <img src="../assets/avwap6.png" alt="AVWAP Mean Reversion Strategy chart example">
+
+    <p>
+      The "IsFlat" logic avoids trades during trending moves, enhancing performance in sideways markets.
+    </p>
+
+    <h2>Backtest Results</h2>
+    <p>
+      Backtests were performed on the 3-minute timeframe and electronic trading hours on the e-mini S&P Futures (ES). Fees are included. The benchmark labeled 'Close' represents the actual S&P chart. No compounding was applied, and both tests started with $150,000, risking ~$1000 per trade.
+    </p>
+
+    <p>
+      The first backtest covers 2020 to July 2025, using 1-minute bars with every price inside considered, ensuring precise simulation of trades. 
+    </p>
+    <img src="../assets/avwap-stats-min-2020-2025.png" alt="AVWAP backtest results 2020-2025">
+
+    <p>
+      The second backtest spans January 2025 to July 2025, using tick-last data for high accuracy. Performance varies by market conditions, as expected with any real trading strategy.
+    </p>
+    <img src="../assets/avwap-stats-tick-2025.png" alt="AVWAP backtest results tick data 2025">
+
+    <p>
+      Parameters used for these tests are provided upon purchase. Users are encouraged to backtest themselves to understand performance in different market conditions. This strategy excels in choppy, sideways markets and can complement other strategies effectively.
+    </p>
+
+    <p>
+      Traders often find sideways days psychologically challenging. AVWAP Mean Reversion provides a disciplined approach to trade these conditions successfully.
+    </p>
+
+    <p>Price: <strong>$199</strong></p>
+    <button class="btn" onclick="openCheckout('AVWAP Mean Reversion', 199, 'avwap_mean_reversion')">Buy Now</button>
+  </div>
+</div>
+
+<!-- Checkout Modal -->
+  <div id="checkoutModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="checkoutCloseBtn">&times;</span>
+      <h2 class="modal-title" id="modalProductName">Product Name</h2>
+      <div class="modal-price" id="modalProductPrice">$0</div>
+
+      <!-- Email input with custom styling -->
+      <div class="checkout-email-container">
+        <label for="checkoutEmail">Email:</label>
+        <input type="email" id="checkoutEmail" placeholder="you@example.com" required />
+        <button id="checkoutProceedBtn">Proceed to Payment</button>
+      </div>
+
+      <!-- Trading / risk disclaimer -->
+      <div id="tradingDisclaimer" style="color:#EEE; font-size:0.85em; margin-bottom:1rem; text-align:left;">
+        <h3>Disclaimer</h3>
+        Trading involves substantial risk. Past performance is not indicative of future results. 
+        By using these strategies and indicators, you acknowledge it is your responsibility 
+        to monitor any running strategies and understand their behavior. Bugs may exist; 
+        familiarize yourself with each tool before risking capital. Use these tools cautiously and at your own risk.
+        <a href="/disclaimer.html" class="read-more" target="_blank">Full trading disclaimer</a>
+      </div>
+
+      <!-- Disclaimer (neutral color) -->
+      <div id="checkoutDisclaimer" style="display:none; color:#ccc; font-size:0.9em; margin-top:8px;">
+        Please do not close the browser/tab while payment is processing. After the payment is completed and confirmed 
+        (wait for a green checkmark), you will get an email with the software and the license key shortly. If you cannot
+         find the email, please check your spam folder. If any other issues arise, <a href="about.html#contact-section" target="_blank" class="read-more">Contact Us</a>
+
+      </div>
+
+      <!-- Checkout iframe container (empty initially) -->
+      <div id="checkoutContainer"></div>
+    </div>
+  </div>
+
+  <!-- Early Access Modal -->
+  <div class="modal" id="earlyAccessModal">
+    <div class="modal-content">
+      <span class="close-modal" id="earlyAccessClose">&times;</span>
+
+      <h2 class="modal-title">Early Access Information</h2>
+      <p>
+        You are joining at a special early stage! Prices are currently low, and strategies/indicators will continue
+        to improve and become more stable. In the future, premium strategies may have a fixed cap on licenses to
+        preserve capacity edge. Your feedback and suggestions are welcome.
+      </p>
+      <p>
+        Take advantage of this opportunity to get in at the best prices and help shape future releases!
+      </p>
+    </div>
+  </div>
+
+<div id="footer-container"></div>
+
+<script src="../js/main.js"></script>
+<script src="../js/early_access.js"></script>
+<script src="../js/checkout.js"></script>
+
+</body>
+</html>

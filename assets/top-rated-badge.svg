@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="50" viewBox="0 0 240 50" role="img" aria-label="Top Rated Developer 5 stars on Upwork">
+  <!-- Background pill -->
+  <rect x="0" y="0" width="240" height="50" rx="25" fill="url(#grad)"></rect>
+
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"></stop>
+      <stop offset="100%" stop-color="#06b6d4"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Star icon, big star aligned perfectly -->
+  <polygon points="25,8 30,20 43,20 32,28 36,40 25,32 14,40 18,28 7,20 20,20" fill="white"></polygon>
+
+  <!-- Top line: Top Rated Developer, moved slightly down -->
+  <text x="55" y="20" font-family="Arial, sans-serif" font-size="16" fill="white" font-weight="bold">
+    Top Rated Developer
+  </text>
+
+  <!-- Bottom line: 5★ on Upwork, moved slightly down -->
+  <text x="55" y="38" font-family="Arial, sans-serif" font-size="12" fill="white">
+    5★ on Upwork
+  </text>
+</svg>

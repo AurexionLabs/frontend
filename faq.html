@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - Aurexion Labs Trading Tools</title>
+  <meta name="description" content="Find answers to frequently asked questions about Aurexion Labs trading tools, Quantower integration, and low-latency execution services.">
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="icon" type="image/png" sizes="128x128" href="/favicon.png">
+</head>
+<body>
+
+<div id="header-placeholder"></div>
+
+<div class="page-content">
+  <div class="content-block">
+    <h1>Frequently Asked Questions</h1>
+
+    <h3>Why would you sell working strategies?</h3>
+    <p>
+      Our base strategies are built on well-known, time-tested concepts from the public domain. They are not “magic bullets” — nobody will sell you a strategy that works in every market and condition — but they can be highly effective when applied under the right circumstances and paired with our advanced risk- and trade-management execution layer. In the future, we may also release premium strategies with a limited number of licenses to help preserve their edge.
+    </p>
+
+    <h3>What makes Aurexion Labs strategies different?</h3>
+    <p>
+      Many retail trading products promise the world but deliver little. At Aurexion Labs, we focus on
+      professional-grade<a href="execution.html" class="read-more">execution</a> and risk management systems, the same kind of infrastructure used
+      by institutions. Every strategy we release is rules-based, transparent, and built to last — no gimmicks,
+      no unrealistic claims.
+    </p>
+
+    <h3>Can I customize the strategies to fit my own trading style?</h3>
+    <p>
+      Yes. Each strategy can be tailored in many ways — you can backtest, optimize, run walk-forward analyses, or use them alongside your own market insights. For example, you might identify when a market is stuck in sideways chop and choose to run only certain strategies during that condition. You can also experiment with parameter settings, focus on specific times of day or days of the week, or combine strategies in a portfolio to smooth your equity curve. These base strategies are the same types professionals use — the real edge comes from knowing when and how to apply them, which is something you can develop too.
+    </p>
+
+    <h3>Do I need coding skills to use your tools?</h3>
+    <p>
+      No. All strategies and indicators are delivered as ready-to-use tools for your platform. Our focus is
+      to remove technical barriers so traders can concentrate on finding and applying their own edge, not wrestling with
+      code. Browse our<a href="index.html" class="read-more">store</a> to see all available products.
+    </p>
+
+    <h3>How do I install the tools?</h3>
+    <div class="faq-installation">
+      <p>
+        After you have installed the Quantower platform, you can unzip the files directly into the Quantower installation folders:
+      </p>
+
+      <div class="faq-section">
+        <strong>For strategies:</strong>
+        <p>Copy the strategy folder from the zip file and place it here:</p>
+        <pre class="install-path">[install-path]\Quantower\Settings\Scripts\Strategies</pre>
+        <p>Example for AVWAP Mean Reversion Strategy:</p>
+        <pre class="install-path">D:\Programs\Quantower\Settings\Scripts\Strategies\AVWAPReversion</pre>
+      </div>
+
+      <div class="faq-section">
+        <strong>For indicators:</strong>
+        <p>Copy the indicator folders from the zip file and place it here:</p>
+        <pre class="install-path">[install-path]\Quantower\Settings\Scripts\Indicators</pre>
+        <p>Example for AVWAP Indicator:</p>
+        <pre class="install-path">D:\Programs\Quantower\Settings\Scripts\Indicators\AVWAP</pre>
+      </div>
+    </div>
+
+    <h3>How do I enable Email notifications?</h3>
+    <p>
+      There are instructions included in the strategy zip file. You will need a free gmail account.
+    </p>
+
+    <h3>Are the strategies trustworthy to run live?</h3>
+    <p>
+      The common execution layer and thuss all the strategies, are created with a "live-first" principal. They are an accumulation of 2 years of work making strategies run stable in a live environment.
+      There are hundreds of small quirks that can happen live, that never happens in a backtest. Altough ANYTHING can happen and nothing is 100% guaranteed (<a href="/disclaimer" class="read-more">Full Trading Disclaimer</a> ), using our strategies will save you years of
+      tweaking and fixing bugs, errors and other quirks when running live. You can create a simple backtest in days, but making it run live in a robust way is a whole other beast.
+    </p>
+
+    <h3>Can I run many strategies simultaneuously?</h3>
+    <p>
+      Yes! You can create how many strategy instances as you want. As long as you have enough computing power. You can run many instances of the same strategy at the same time. And you can also
+      run many instances of another strategy, all at the same time. As long as each instance are on either different brokers/exhanges or different symbols on the same broker/exchange.
+    </p>
+
+    <h3>Can I use a VPS?</h3>
+    <p>
+      Yes! You can run Quantower and the strategies on a VPS (Windows machine) 
+    </p>
+
+    <h3>Can I use the strategies with ProjectX?</h3>
+    <p>
+      <strong>OBS! We are currently testing and tweaking the ProjectX execution, and it will be completed very soon.</strong>
+      Yes you can run on the ProjectX API from within Quantower, but there is currently a caveat in that you can only do 1-legged trades. Which means you cannot have 3 different TakeProfits with automatic handling from the execution layer.
+      That is because ProjectX only allows 1 server-side SL/TP pair on a position. You could however do this manually, like you have the base SL/TP, and then just create different TP
+      orders manually. This will probably change in the future, and some day all of our strategy and execution features will work 100% with ProjectX as well.
+    </p>
+
+    <h3>What happens if I loose connection while the strategies are running?</h3>
+    <p>
+      All of the SL/TP pairs are server-side, so worst case is that maybe the trailing logic doesnt work, but the protective StopLosses and TakeProfits are server-side at the broker/exchange.
+      Usually when the connection is re-established the strategies will pick up again. But we recommend that you also set max daily loss limits in the broker softwares if available. This is possible
+      on for example the "Rithmic R Trader Pro" application when using that together with Quantower, and also if using ProjectX. You do need to do some research and testing with these things. Any losses 
+      that might occur are your responsibility and we cannot take responsibility or reimburse anything. Please read more in the <a href="/disclaimer" class="read-more">Full Trading Disclaimer</a>
+    </p>
+
+    <h3>Can I use the strategies with prop firms?</h3>
+    <p>
+      Yes! As long as you follow their rules and risk-limits.
+    </p>
+
+    <h3>When should I use certain strategies?</h3>
+    <p>
+      Strategies are not meant to be run blindly in every market condition. The real power comes from knowing when to apply them. For example, some strategies may perform well in trending markets, while others are better suited for range-bound or choppy conditions. By combining your own market analysis with the strategies, you can choose which ones to run — and when — to align with the current environment. This is exactly how many professional traders use these types of strategies to their advantage.
+    </p>
+
+    <h3>How can these strategies help me trade more effectively?</h3>
+    <p>
+      Using an automatic or semi-discretionary approach makes it easier to avoid over-trading and prevents emotional decision-making from hijacking your results. You can gain additional confidence by backtesting the strategies, seeing how they perform under various market conditions, and knowing that they work when applied correctly. Combined with your own analysis and discretion, this approach helps you make more consistent, informed trading decisions.
+    </p>
+
+    <h3>How does licensing work?</h3>
+    <p>
+      When you purchase a product, it is licensed to your email address. You’ll receive a license key
+      after payment is confirmed. If you buy additional products later, they are added under the same
+      license so you can manage everything from one place. Check out our<a href="products/all-in-bundle.html" class="read-more">bundles</a> for an easy way to get multiple strategies.
+    </p>
+
+    <h3>What happens if I lose my license key?</h3>
+    <p>
+      No problem. Your license is tied to your email address. Just contact us using the same email, and
+      we’ll resend your license details.
+    </p>
+
+    <h3>Do you offer refunds?</h3>
+    <p>
+      Because these are digital products, we cannot offer refunds once a license has been issued. 
+      However, if you encounter any issues, we will work with you to resolve them quickly.
+    </p>
+
+    <h3>Can I see the indicators from the strategies on my Quantower charts?</h3>
+    <p>
+      The indicators used in our strategies are embedded inside them, so they won’t appear as standalone tools in Quantower. If you want to visualize what the strategy is doing on your charts, you’ll need the <a href="products/indicator-pack.html" class="read-more">Indicator Pack</a>. To ensure the chart view matches the strategy’s logic, make sure to apply the same parameter settings for the indicator as those defined in the strategy.
+    </p>
+
+    <h3>Are the "Coming Soon" strategies included in the bundle?</h3>
+    <p>
+      Absolutely. All base strategies — including those marked as "Coming Soon" on the store page, as well as additional ones not yet listed — are included in the bundle. As new base strategies are released, they’ll be automatically added to your license at no extra cost, along with the <a href="products/indicator-pack.html" class="read-more">Indicator Pack</a>. This means your bundle keeps growing in value over time. Please note that future premium strategies, which may be limited in availability, will be offered separately.
+    </p>
+
+    <h3>Can I get a custom-built strategy?</h3>
+    <p>
+      Absolutely. In addition to our ready-made strategies, Aurexion Labs offers bespoke development
+      services. If you have your own trading ideas, we can design and automate them using our
+      institutional-grade<a href="execution.html" class="read-more">execution layer</a>. <a href="https://www.upwork.com/freelancers/~01d115f5b6c0828325" 
+        class="upwork-link" target="_blank"><br>Learn more here</a>
+    </p>
+
+    <h3>Which markets can I trade with these strategies?</h3>
+    <p>
+      Our strategies are market-type agnostic, meaning they can be applied across any market supported by Quantower — including futures, forex, crypto, and equities. If your broker or platform allows trading through Quantower, you can harness our tools seamlessly.
+    </p>
+
+    <h3>Can I use my license on multiple computers?</h3>
+    <p>
+      Each license is bound to a single computer. When you activate your license for the first time, it becomes tied to that specific machine. If you need to transfer your license to another device, please contact our support team for assistance.
+    </p>
+
+    <h3>I'm a new trader. Can I still use Aurexion Labs strategies?</h3>
+    <p>
+      Yes — in fact, new traders are especially encouraged to use these tools. Most retail traders
+      unknowingly trade with a <strong>negative edge</strong>, often due to inconsistent execution,
+      emotional decisions, or lack of risk management. Our strategies give you a head start by enforcing
+      statistically rigorous, rules-based trading. This helps you avoid common pitfalls while you learn,
+      and gives you a foundation you can build your own style on over time.
+      <br> Learn more on our<a href="about.html" class="read-more">About Us</a> page.
+    </p>
+
+  </div>
+</div>
+
+<div id="footer-container"></div>
+
+<script src="../js/main.js"></script>
+
+</body>
+</html>

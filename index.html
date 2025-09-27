@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurexion Labs – Automated & Risk-Managed Trading Tools for Quantower</title>
+  <meta name="description" content="Professional automated and semi-discretionary trading tools for Quantower. Strategies, indicators, and bundles designed for retail and prop traders.">
+  <meta name="keywords" content="Quantower, trading strategies, automated trading, indicators, trading tools, AVWAP, risk management, algotrading, quantitative trading">
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="icon" type="image/png" sizes="128x128" href="/favicon.png">
+</head>
+<body>
+
+  <div id="header-placeholder"></div>
+
+  <p class="quantower-note"> 
+    <i>All strategies, indicators, tools and the execution layer are built on top of the <a href="quantower.html" style="color:#46c463; font-weight:bold; text-decoration:none;">Quantower</a> platform (free) </i>
+  </p>
+
+  <p class="early-access">
+    We’re currently in <a href="#" id="earlyAccessLink" class="read-more">early access</a> — enjoy introductory prices while we continue improving and expanding our tools.
+  </p>
+
+
+  <div class="section-divider"></div>  
+  <h1 class="visually-hidden">Aurexion Labs - Automated & Semi-Discretionary Trading Tools</h1>
+  <div class="grid">
+  <!-- Active product: AVWAP -->
+  <div class="card" style="background:url('assets/avwap.png') center/cover no-repeat;">
+    <div class="overlay"></div>
+    <div class="content">
+      <h2><a href="products/avwap_strategy.html" class="product-link">AVWAP Mean Reversion</a></h2>
+      <div class="price">$199</div>
+      <p style="font-size:0.9rem;">
+        Auto Anchored VWAP Mean Reversion Strategy.
+        <a href="products/avwap_strategy.html" class="read-more">Read More</a>
+      </p>
+      <button class="btn" onclick="openCheckout('AVWAP Mean Reversion', 199, 'avwap_mean_reversion')">
+        Buy Now
+      </button>
+    </div>
+  </div>
+
+  <!-- Active product: Indicator Pack -->
+  <div class="card" style="background:url('assets/indicator-pack.png') center/cover no-repeat;">
+    <div class="overlay"></div>
+    <div class="content">
+      <h2><a href="products/indicator-pack.html" class="product-link">Indicator Pack</a></h2>
+      <div class="price">$49</div>
+      <p style="font-size:0.9rem;">
+        All the indicators used in the strategies + some extra.
+        <a href="products/indicator-pack.html" class="read-more">Read More</a>
+      </p>
+      <button class="btn" onclick="openCheckout('Indicator Pack', 49, 'indicator_pack')">
+        Buy Now
+      </button>
+    </div>
+  </div>
+
+  <!-- Active product: Bundle -->
+  <div class="card bundle-card" style="background:url('assets/bundle.png') center/cover no-repeat;">
+    <div class="overlay"></div>
+    <div class="content">
+      <h2><a href="products/all-in-bundle.html" class="product-link">All-in Bundle</a></h2>
+      <div class="price">$499</div>
+      <p style="font-size:0.9rem;">
+        Includes all base strategies (current & future) + Indicator Pack.
+        <a href="products/all-in-bundle.html" class="read-more">Read More</a>
+      </p>
+      <button class="btn" onclick="openCheckout('All-in Bundle', 499, 'all_in_bundle')">
+        Buy Bundle
+      </button>
+      
+    </div>
+  </div>
+
+  <!-- Coming Soon: Opening Range Breakout -->
+  <div class="card coming-soon" style="background:url('assets/breakout.png') center/cover no-repeat;">
+    <div class="coming-soon-badge">Coming Soon</div>
+    <div class="overlay"></div>
+    <div class="content">
+      <h2>Opening Range Breakout</h2>
+      <div class="price">$199</div>
+      <p style="font-size:0.9rem;">Opening Range Breakout (fully customizable ruleset)</p>
+    </div>
+  </div>
+
+  <!-- Coming Soon: Channel Mean Reversion -->
+  <div class="card coming-soon" style="background:url('assets/mean-reversion.png') center/cover no-repeat;">
+    <div class="coming-soon-badge">Coming Soon</div>
+    <div class="overlay"></div>
+    <div class="content">
+      <h2>Channel Mean Reversion</h2>
+      <div class="price">$199</div>
+      <p style="font-size:0.9rem;">Classic Mean Reversion. Select from several Channel Indicators</p>
+    </div>
+  </div>
+
+  <!-- Coming Soon: Volatility Breakout -->
+  <div class="card coming-soon" style="background:url('assets/v-breakout.png') center/cover no-repeat;">
+    <div class="coming-soon-badge">Coming Soon</div>
+    <div class="overlay"></div>
+    <div class="content">
+      <h2>Volatility Breakout</h2>
+      <div class="price">$199</div>
+      <p style="font-size:0.9rem;">Volatility based breakout system, to catch big trends</p>
+    </div>
+  </div>
+
+  <!-- Coming Soon: 20-Bar Breakout -->
+  <div class="card coming-soon" style="background:url('assets/blue-breakout.png') center/cover no-repeat;">
+    <div class="coming-soon-badge">Coming Soon</div>
+    <div class="overlay"></div>
+    <div class="content">
+      <h2>20-Bar Breakout</h2>
+      <div class="price">$199</div>
+      <p style="font-size:0.9rem;">Classic Turtle style Trend-Following with custom risk management</p>
+    </div>
+  </div>
+</div>
+
+  <!-- Checkout Modal -->
+  <div id="checkoutModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="checkoutCloseBtn">&times;</span>
+      <h2 class="modal-title" id="modalProductName">Product Name</h2>
+      <div class="modal-price" id="modalProductPrice">$0</div>
+
+      <!-- Email input with custom styling -->
+      <div class="checkout-email-container">
+        <label for="checkoutEmail">Email:</label>
+        <input type="email" id="checkoutEmail" placeholder="you@example.com" required />
+        <button id="checkoutProceedBtn">Proceed to Payment</button>
+      </div>
+
+      <!-- Trading / risk disclaimer -->
+      <div id="tradingDisclaimer" style="color:#EEE; font-size:0.85em; margin-bottom:1rem; text-align:left;">
+        <h3>Disclaimer</h3>
+        Trading involves substantial risk. Past performance is not indicative of future results. 
+        By using these strategies and indicators, you acknowledge it is your responsibility 
+        to monitor any running strategies and understand their behavior. Bugs may exist; 
+        familiarize yourself with each tool before risking capital. Use these tools cautiously and at your own risk.
+        <a href="/disclaimer.html" class="read-more" target="_blank">Full trading disclaimer</a>
+      </div>
+
+      <!-- Disclaimer (neutral color) -->
+      <div id="checkoutDisclaimer" style="display:none; color:#ccc; font-size:0.9em; margin-top:8px;">
+        Please do not close the browser/tab while payment is processing. After the payment is completed and confirmed 
+        (wait for a green checkmark), you will get an email with the software and the license key shortly. If you cannot
+         find the email, please check your spam folder. If any other issues arise, <a href="about.html#contact-section" target="_blank" class="read-more">Contact Us</a>
+
+      </div>
+
+      <!-- Checkout iframe container (empty initially) -->
+      <div id="checkoutContainer"></div>
+    </div>
+  </div>
+
+  <!-- Early Access Modal -->
+  <div class="modal" id="earlyAccessModal">
+    <div class="modal-content">
+      <span class="close-modal" id="earlyAccessClose">&times;</span>
+
+      <h2 class="modal-title">Early Access Information</h2>
+      <p>
+        You are joining at a special early stage! Prices are currently low, and strategies/indicators will continue
+        to improve and become more stable. In the future, premium strategies may have a fixed cap on licenses to
+        preserve capacity edge. Your feedback and suggestions are welcome.
+        
+        Take advantage of this opportunity to get in at the best prices and help shape future releases!
+      </p>
+    </div>
+  </div>
+
+  <div id="footer-container"></div>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/early_access.js"></script>
+  <script src="../js/checkout.js"></script>
+
+</body>
+</html>

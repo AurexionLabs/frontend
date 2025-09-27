@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurexion Labs – Automated & Risk-Managed Trading Tools for Quantower</title>
+  <meta name="description" content="Professional automated and semi-discretionary trading tools for Quantower. Strategies, indicators, and bundles designed for retail and prop traders.">
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="icon" type="image/png" sizes="128x128" href="/favicon.png">
+</head>
+<body>
+
+<div id="header-placeholder"></div>
+
+  <div class="page-content">
+    <div class="content-block">
+
+      <h1>Disclaimer</h1>
+
+      <section>
+          <h2>General Information</h2>
+          <p>
+              The tools, strategies, indicators, and execution layers provided by Aurexion Labs are intended for
+              educational and informational purposes only. Trading involves substantial risk and may not be suitable
+              for all individuals. Past performance of any trading strategy is not indicative of future results.
+          </p>
+      </section>
+
+      <section>
+          <h2>User Responsibility</h2>
+          <p>
+              It is the user’s responsibility to monitor any active strategies and indicators while in use. Strategies
+              may contain bugs, unexpected behavior, or limitations. Users must familiarize themselves with how each
+              strategy behaves under different market conditions before committing real capital.
+          </p>
+          <p>
+              Always ensure you have adequate risk management in place and never invest more than you can afford to lose.
+          </p>
+      </section>
+
+      <section>
+          <h2>Startup Phase & Pricing</h2>
+          <p>
+              Aurexion Labs is currently in an early-access phase. Prices are introductory and may increase as tools
+              and strategies are improved and made more stable. Users joining at this stage benefit from lower costs
+              but should expect ongoing updates, optimizations, and feature improvements.
+          </p>
+          <p>
+              Future premium strategies may have a fixed cap on licenses to maintain performance advantages. Users are
+              encouraged to provide feedback and suggestions to help shape upcoming features and strategies.
+          </p>
+      </section>
+
+      <section>
+          <h2>Limitations & No Guarantees</h2>
+          <p>
+              While we strive to provide robust and well-tested tools, there is no guarantee of profits or success.
+              All trading decisions remain the responsibility of the user. Users should understand and accept the
+              inherent risks of trading.
+          </p>
+          <p>
+              Aurexion Labs is not liable for any losses, damages, or consequences arising from the use of its tools
+              and strategies. Use them at your own risk.
+          </p>
+      </section>
+
+      <section>
+          <h2>Data & Privacy</h2>
+          <p>
+              The email address you provide during checkout is used solely to deliver your purchased license and
+              related software. Your email will not be shared with third parties or used for marketing purposes unless
+              you explicitly opt in.
+          </p>
+          <p>
+              Our website itself does not collect cookies or track your behavior. The payment widget (NowPayments)
+              may use cookies or tracking for transaction processing, and you will see their consent options in the widget.
+          </p>
+      </section>
+
+      <section>
+          <h2>Contact & Support</h2>
+          <p>
+            If you encounter issues, have questions, or want to provide feedback, you can reach us at
+            <a href="#" id="contactEmail" class="read-more"></a> or join our Discord channel (coming soon).
+          </p>
+      </section>
+
+      <script>
+        // Dynamically add email to prevent scraping
+        const user = "support";
+        const domain = "aurexionlabs.com";
+        const email = `${user}@${domain}`;
+        const link = document.getElementById("contactEmail");
+
+        link.href = `mailto:${email}`;
+        link.textContent = email;
+
+      </script>
+    </div>
+</div>
+
+<div id="footer-container"></div>
+
+<script src="../js/main.js"></script>
+
+</body>
+</html>
