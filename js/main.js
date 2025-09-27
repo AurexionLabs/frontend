@@ -1,5 +1,7 @@
 // Determine the correct path for products pages vs root pages
-const pathPrefix = window.location.pathname.includes('/products/') ? '../' : '';
+// If current page is in '/products/' or '/pages/', prefix is '../', otherwise ''
+const pathPrefix = window.location.pathname.includes('/products/') || window.location.pathname.includes('/pages/') ? '../' : '';
+
 
 // Header
 fetch(`${pathPrefix}components/header.html`)

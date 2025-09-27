@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Unified Execution Engine for Quantower - Aurexion Labs</title>
   <meta name="description" content="All Aurexion Labs strategies run on a battle-tested execution layer, ensuring every trade is executed with precision and consistency.">
-  <link rel="stylesheet" href="style/main.css">
-  <link rel="icon" type="image/png" sizes="128x128" href="/favicon.png">
+  <link rel="stylesheet" href="../style/main.css">
+  <link rel="icon" type="image/png" sizes="128x128" href="../favicon.png">
 </head>
 <body>
 <div id="header-placeholder"></div>
@@ -24,12 +24,12 @@
       Every execution is meticulously tracked. Partial fills are aggregated, divided correctly among strategy legs, and monitored in real time to maintain strict adherence to the user’s configuration. This ensures that no trade is left unmanaged, and every leg behaves exactly as intended.
     </p>
     <p>
-      The available features within a strategy are determined by its type. Mean reversion strategies, for example, typically operate with a single take-profit level—set at the mean of the chosen indicator such as MA or<a href="products/avwap_strategy.html" class="read-more">AVWAP</a>—but still fully support trailing logic, stop-loss rules, and other risk management settings. Multi-leg strategies with multiple take-profit levels are better suited for momentum and trend-following approaches, whether intraday or on a longer time horizon.
+      The available features within a strategy are determined by its type. Mean reversion strategies, for example, typically operate with a single take-profit level—set at the mean of the chosen indicator such as MA or<a href="../products/avwap_strategy.html" class="read-more">AVWAP</a>—but still fully support trailing logic, stop-loss rules, and other risk management settings. Multi-leg strategies with multiple take-profit levels are better suited for momentum and trend-following approaches, whether intraday or on a longer time horizon.
     </p>
     <h3 class="image-title">Mean Reversion Example</h3>
     <div class="image-row">
-        <img src="assets/trail-params.png" alt="Example of trailing stop-loss">
-        <img src="assets/trail1.png" alt="Example of trailing stop-loss">
+        <img src="../assets/trail-params.png" alt="Example of trailing stop-loss">
+        <img src="../assets/trail1.png" alt="Example of trailing stop-loss">
     </div>
 
     <p>
@@ -37,14 +37,14 @@
     </p>
 
     <h3 class="image-title">Logging</h3>
-    <img src="assets/trail-log.png" alt="Example of detailed logging">
+    <img src="../assets/trail-log.png" alt="Example of detailed logging">
     <p>
       The platform provides comprehensive, detailed logs, giving traders complete transparency into the internal workings of the execution engine. Users can review the lifecycle of each trade, analyze performance at the level of individual fills, and verify that strategies operate exactly as intended.
     </p>
 
     <h3 class="image-title">Daily P/L Limits</h3>
-    <img src="assets/daily-limits.png" alt="Example of detailed logging">
-    <img src="assets/daily-limits2.png" alt="Example of detailed logging">
+    <img src="../assets/daily-limits.png" alt="Example of detailed logging">
+    <img src="../assets/daily-limits2.png" alt="Example of detailed logging">
     <p>
       Set daily per-strategy-instance P/L limits in dollar or points. When a limit is reached (even during a trade): 
     </p>
@@ -55,7 +55,7 @@
     </ul>
 
     <h3 class="image-title">Daily trading periods</h3>
-    <img src="assets/periods.png" alt="Example of detailed logging">
+    <img src="../assets/periods.png" alt="Example of detailed logging">
     <p>
       Use up to 3 different trading periods. Configurable every day if you need to. For example if you want to avoid a certain news event happening on that day.
       When the end of a period happens, all orders and positions will be cancelled and closed automatically.
