@@ -1,7 +1,7 @@
 # ![Aurexion Labs](https://img.shields.io/badge/Aurexion%20Labs-Frontend-blue?style=flat-square)
 
 <p align="left">
-  <img src="assets/logo.png" alt="Aurexion Labs Frontend" width="300">
+  <img src="assets/logo.png" href="https://aurexionlabs.com" alt="Aurexion Labs Frontend" width="300">
 </p>
 
 
