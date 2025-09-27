@@ -5,7 +5,7 @@
 </p>
 
 
-This repository contains the **frontend code** for Aurexion Labs, including the landing pages, header/footer components, and styling.  
+This repository contains the **frontend code** for the Aurexion Labs store, including the landing pages, header/footer components, and styling.  
 
 It’s built with **plain HTML, CSS, and JavaScript**, no frameworks, for simplicity and maintainability.  
 
