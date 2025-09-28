@@ -9,23 +9,23 @@
 
   <!-- Top-level pages -->
   <url>
-    <loc>https://www.aurexionlabs.com/quantower</loc>
+    <loc>https://www.aurexionlabs.com/pages/quantower.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.aurexionlabs.com/execution</loc>
+    <loc>https://www.aurexionlabs.com/pages/execution.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.aurexionlabs.com/about</loc>
+    <loc>https://www.aurexionlabs.com/pages/about.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.aurexionlabs.com/philosophy</loc>
+    <loc>https://www.aurexionlabs.com/pages/philosophy.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.aurexionlabs.com/faq</loc>
+    <loc>https://www.aurexionlabs.com/pages/faq.html</loc>
     <priority>0.7</priority>
   </url>
 
